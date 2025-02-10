@@ -4,7 +4,7 @@
 The config folder contains essential configuration files for the vehicle telemetry data pipeline. These files define the schema for telemetry data validation and interpolation, as well as metadata about the vehicles in the fleet. These configurations ensure data consistency, quality, and enrichment during processing.
 
 ## Files in this Folder:
-1. schema.yml:
+### 1. schema.yml:
    This file defines the schema for the raw_telemetry data, including field types, constraints, and interpolation rules. It is used to validate incoming raw telemetry data from blob/s3 storage and apply necessary transformations.
 ### Key Features:
   a. Field Definitions: Specifies each field's name, type, and description.
@@ -24,7 +24,7 @@ The config folder contains essential configuration files for the vehicle telemet
 | `latitude`           | double  | No       | No            | Min: -90, Max: 90    | GPS latitude coordinate              |
 | `longitude`          | double  | No       | No            | Min: -180, Max: 180  | GPS longitude coordinate             |
 
-2. vehicle_hash_table.yml:
+### 2. vehicle_hash_table.yml:
    This file contains metadata about the vehicles in the fleet. It maps each vehicle_id to detailed information about the vehicle's battery configuration, type, capacity etc.
 ### Key Features:
   a. Vehicle Metadata: Includes details such as commercial name, battery chemistry, pack configuration, nominal voltage, and number of cells.
@@ -44,10 +44,17 @@ The config folder contains essential configuration files for the vehicle telemet
 
 #### Example Vehicle:
 vehicle_id: V-001
+
 Commercial Name: Mustang Mach-e
+
 Battery Pack Configuration: 197s2p
+
 Battery Type: Lithium-Ion
+
 Battery Capacity: 100.54 kWh
+
 Nominal Voltage: 800 V
+
 Form Factor: Pouch
+
 Number of Cells: 384
