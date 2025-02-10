@@ -1,0 +1,106 @@
+# schema.yml
+schema:
+  fields:
+    - name: vehicle_id
+      type: string
+      required: true
+      interpolation:
+        enabled: false
+      description: "Unique vehicle identifier"
+      example: "V-001"
+
+    - name: timestamp
+      type: string
+      required: true
+      interpolation:
+        enabled: false
+      format: "%Y-%m-%d %H:%M:%S"
+      description: "Event timestamp in UTC"
+      example: "2025-02-08 00:38:42"
+
+    - name: speed_kmh
+      type: double
+      nullable: true
+      interpolation:
+        enabled: true
+        type: "linear"
+        max_derivative_order: 10
+      constraints:
+        min: 0
+        max: 170
+      description: "Vehicle speed in kilometers per hour"
+      example: 19.47
+
+    - name: battery_voltage
+      type: double
+      nullable: true
+      interpolation:
+        enabled: true
+        type: "zoh"
+        max_derivative_order: 10
+      constraints:
+        min: 0
+        max: 400
+      description: "Battery voltage in volts"
+      example: 363.48
+
+    - name: battery_current
+      type: double
+      nullable: true
+      interpolation:
+        enabled: true
+        type: "zoh"
+        max_derivative_order: 10
+      constraints:
+        min: -40
+        max: 40
+      description: "Battery current in amperes"
+      example: -31.73
+
+    - name: battery_soc_percent
+      type: double
+      nullable: true
+      interpolation:
+        enabled: true
+        type: "zoh"
+        max_derivative_order: 10
+      constraints:
+        min: 0
+        max: 100
+      description: "State of charge percentage"
+      example: 90.45
+
+    - name: battery_temp_celsius
+      type: double
+      nullable: true
+      interpolation:
+        enabled: true
+        type: "zoh"
+        max_derivative_order: 10
+      constraints:
+        min: -20
+        max: 40
+      description: "Battery temperature in Celsius"
+      example: -47.48
+
+    - name: latitude
+      type: double
+      nullable: true
+      interpolation:
+        enabled: false
+      constraints:
+        min: -90
+        max: 90
+      description: "GPS latitude coordinate"
+      example: -30.805221
+
+    - name: longitude
+      type: double
+      nullable: true
+      interpolation:
+        enabled: false
+      constraints:
+        min: -180
+        max: 180
+      description: "GPS longitude coordinate"
+      example: 23.440127

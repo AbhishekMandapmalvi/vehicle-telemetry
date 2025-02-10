@@ -1,0 +1,45 @@
+vehicle:
+  - vehicle_id: "V-001"
+    commercial_name: "Mustang Mach-e"
+    battery_pack_configuration: "197s2p"
+    battery_type: "lithium-ion"
+    battery_capacity: 100.54
+    nominal_voltage: 800
+    form_factor: "pouch"
+    number_of_cell: 384
+
+  - vehicle_id: "V-002"
+    commercial_name: "Ioniq"
+    battery_pack_configuration: "45s4p"
+    battery_type: "lithium-ion"
+    battery_capacity: 74
+    nominal_voltage: 400
+    form_factor: "prismatic"
+    number_of_cell: 180
+
+  - vehicle_id: "V-003"
+    commercial_name: "Tesla Model S"
+    battery_pack_configuration: "96s3p"
+    battery_type: "lithium-ion"
+    battery_capacity: 86
+    nominal_voltage: 400
+    form_factor: "cylinder"
+    number_of_cell: 288
+
+  - vehicle_id: "V-004"
+    commercial_name: "Rivian R1S"
+    battery_pack_configuration: "147s2p"
+    battery_type: "lithium-ion"
+    battery_capacity: 93
+    nominal_voltage: 800
+    form_factor: "pouch"
+    number_of_cell: 294
+
+  - vehicle_id: "V-005"
+    commercial_name: "Hummer EV"
+    battery_pack_configuration: "114s3p"
+    battery_type: "lithium-ion"
+    battery_capacity: 98
+    nominal_voltage: 800
+    form_factor: "cylinder"
+    number_of_cell: 342
