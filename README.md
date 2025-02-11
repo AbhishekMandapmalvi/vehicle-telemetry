@@ -55,4 +55,12 @@ This project processes raw telemetry data from electric vehicle fleets to produc
   a. Utilize databricks' workflow/job scheduler function to automate this pipeline. 
 
 ## Results:
+![image](https://github.com/user-attachments/assets/b74b1dd1-f214-45eb-8106-2514b7bb9604)
+
+![image](https://github.com/user-attachments/assets/13becb63-987f-40ef-8a70-85a147a99608)
+
+![image](https://github.com/user-attachments/assets/78b57594-9a1d-480f-94e7-6d9a06fcecfb)
+
+![image](https://github.com/user-attachments/assets/7e7d6af3-54a3-45d2-986d-04d43d0aaa5e)
+
 ![image](https://github.com/user-attachments/assets/c6e515de-cf3a-4e25-b849-50facdac9597)
