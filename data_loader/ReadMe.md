@@ -9,10 +9,10 @@ This is the entry point for the pipeline. It initializes the Telematics_ingestio
 #### Key Features:
 a. Creates a Spark session.\
 b. Configures paths for:\
-   i.   Schema file (schema.yml).\
-   ii.  Source data (S3 bucket containing telemetry JSON files).\
-   iii. Target Delta table (workspace.default.raw_telemetry).\
-   iv.  Checkpointing (S3 bucket for fault tolerance).\
+      i.   Schema file (schema.yml).\
+      ii.  Source data (S3 bucket containing telemetry JSON files).\
+      iii. Target Delta table (workspace.default.raw_telemetry).\
+      iv.  Checkpointing (S3 bucket for fault tolerance).\
 c. Executes the pipeline using Databricks Autoloader.
 
 ### 2. autoloader.py:
