@@ -33,10 +33,10 @@ This folder contains Python scripts designed to clean raw telemetry data from el
 ### 5. data_cleaning.py:
    This Databricks notebook orchestrates the entire data cleaning pipeline. It integrates all other scripts to process raw telemetry data into a cleaned and enriched format.
 #### Workflow:
-   a. Load raw telemetry data from workspace.default.raw_telemetry.
-   b. Apply constraints using apply_constraints.py.
-   c. Enrich data with vehicle metadata using data_mapping.py.
-   d. Process timestamps into standard formats.
+   a. Load raw telemetry data from workspace.default.raw_telemetry.\
+   b. Apply constraints using apply_constraints.py.\
+   c. Enrich data with vehicle metadata using data_mapping.py.\
+   d. Process timestamps into standard formats.\
    e. Interpolate missing values using interpolation.py.
    f. Determine vehicle status using vehicle_status.py.
    g. Write cleaned data to the Delta Lake table workspace.default.cleaned_telemetry.
