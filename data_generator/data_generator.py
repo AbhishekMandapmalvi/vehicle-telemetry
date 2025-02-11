@@ -1,5 +1,5 @@
 # %%
-# data_maker.ipynb
+# data_generator.ipynb
 from faker import Faker
 import random
 import json
