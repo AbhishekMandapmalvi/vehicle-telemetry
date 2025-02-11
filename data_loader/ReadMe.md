@@ -8,7 +8,7 @@ This folder contains the implementation of a vehicle telemetry ingestion pipelin
 This is the entry point for the pipeline. It initializes the Telematics_ingestion class, sets up configurations, and runs the data ingestion pipeline.
 #### Key Features:
 a. Creates a Spark session.\
-b. Configures paths for:
+b. Configures paths for:\
    i.   Schema file (`schema.yml`).\
    ii.  Source data (S3 bucket containing telemetry JSON files).\
    iii. Target Delta table (`workspace.default.raw_telemetry`).\
