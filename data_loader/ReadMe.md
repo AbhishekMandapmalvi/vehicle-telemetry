@@ -40,6 +40,6 @@ Update paths in main.py for:\
 Execute main.py in your Databricks notebook or cluster.
 
 ## Notes:
-1. Ensure that your S3 bucket paths (source_path, checkpoint_path) are accessible by Databricks.\
-2. The Delta table (workspace.default.raw_telemetry) will be created automatically if it does not exist.\
+1. Ensure that your S3 bucket paths (source_path, checkpoint_path) are accessible by Databricks.
+2. The Delta table (workspace.default.raw_telemetry) will be created automatically if it does not exist.
 3. Use Databricks Autoloader's schema evolution features if you expect changes in your telemetry data structure.
