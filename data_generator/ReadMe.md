@@ -4,19 +4,19 @@
 This script simulates telemetry data for a fleet of vehicles, generating realistic data streams with optional NULL values. The generated data is saved in JSON files organized by vehicle ID, with each file capped at a configurable maximum size (default: 1 MB). The script is designed to run for a specified duration and can be used to test data pipelines or machine learning models.
 
 ### Features:
-1.  Randomized Data Generation:
+#### 1.  Randomized Data Generation:
     Simulates telemetry fields such as speed, battery voltage, current, state of charge, battery temperature, and GPS coordinates.\
     Includes optional NULL values with a configurable probability to mimic real-world missing data scenarios.
 
-2.  Fleet Simulation:
+#### 2.  Fleet Simulation:
     Generates data for multiple vehicles simultaneously.\
     Each vehicle's data is stored in its own directory.
 
-3.  File Management:
+#### 3.  File Management:
     Files are capped at a configurable size (default: 1 MB).\
     Automatically creates new files when the size limit is reached.
 
-4.  Configurable Runtime:
+#### 4.  Configurable Runtime:
     The script runs for a specified duration (default: 30 minutes).
 
 ## Key Parameters:
