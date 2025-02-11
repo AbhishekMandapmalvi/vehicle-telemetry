@@ -7,9 +7,9 @@ The config folder contains essential configuration files for the vehicle telemet
 ### 1. schema.yml:
    This file defines the schema for the raw_telemetry data, including field types, constraints, and interpolation rules. It is used to validate incoming raw telemetry data from blob/s3 storage and apply necessary transformations.
 ### Key Features:
-  a. Field Definitions: Specifies each field's name, type, and description.
-  b. Validation Rules: Includes constraints such as minimum and maximum values for numerical fields.
-  c. Interpolation Settings: Enables interpolation (e.g., linear or zero-order hold) for missing or invalid data points.
+  a. Field Definitions: Specifies each field's name, type, and description.\
+  b. Validation Rules: Includes constraints such as minimum and maximum values for numerical fields.\
+  c. Interpolation Settings: Enables interpolation (e.g., linear or zero-order hold) for missing or invalid data points.\
   d. Examples: Provides sample values for each field to clarify expected formats.
 ### Schema Fields:
 | Field Name           | Type    | Nulls Allowed | Interpolation | Constraints          | Description                          |
