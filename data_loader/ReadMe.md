@@ -35,7 +35,7 @@ Update paths in main.py for:\
     config_path: Path to your YAML schema file (e.g., /Workspace/.../schema.yml).\
     source_path: Path to your cloud storage containing telemetry JSON files (e.g., s3://vehicletelemetry/).\
     target_path: Target Delta table (e.g., workspace.default.raw_telemetry).\
-    checkpoint_path: Path for checkpointing (e.g., s3://vehiclepipelinecache/).\
+    checkpoint_path: Path for checkpointing (e.g., s3://vehiclepipelinecache/).
 2. Run the Pipeline:\
 Execute main.py in your Databricks notebook or cluster.
 
