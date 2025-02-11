@@ -44,18 +44,6 @@ data = data.withColumn("timestamp", to_timestamp("timestamp")) \
 
 # COMMAND ----------
 
-# DBTITLE 1,clean current for vehicle status
-data = data.withColumn(
-                "battery_current",
-                when(
-                    (((col("battery_current") > 0) & (col("speed_kmh") > 0)) |
-                    ((col("battery_current") < 0) & (col("speed_kmh") <= 0))),
-                    lit(None)
-                ).otherwise(col("battery_current"))
-                )
-
-# COMMAND ----------
-
 # DBTITLE 1,interpolate
 data = interpolate_dataframe(data, dataclean_specs)
 
@@ -63,10 +51,6 @@ data = interpolate_dataframe(data, dataclean_specs)
 
 # DBTITLE 1,apply vehicle status
 data = vehicle_status(data)
-
-# COMMAND ----------
-
-data.select("number_of_cell").dtypes
 
 # COMMAND ----------
 
