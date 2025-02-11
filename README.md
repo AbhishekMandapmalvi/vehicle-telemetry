@@ -69,4 +69,9 @@ This project processes raw telemetry data from electric vehicle fleets to produc
   </tr>
 </table>
 
-![image](https://github.com/user-attachments/assets/c6e515de-cf3a-4e25-b849-50facdac9597)
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/8cffcf41-e6f7-452f-9c10-b6aecc40c03e" width="600"/></td>
+    <td><img src="https://github.com/user-attachments/assets/c6e515de-cf3a-4e25-b849-50facdac9597" width="600"/></td>
+  </tr>
+</table>
