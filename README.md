@@ -1,4 +1,4 @@
-# Vehicle Telemetry Data Cleaning Pipeline
+# Vehicle Telemetry ELT Pipeline
 
 ## Project Overview
 This project processes raw telemetry data from electric vehicle fleets to produce cleaned and structured data for use in a battery health prediction model. The pipeline is implemented using Databricks and integrates with cloud storage solutions such as Azure Blob Storage or AWS S3 for scalable data storage. The cleaned data is stored in the cleaned_telemetry Delta Lake table, which serves as the input for the battery health prediction model.
