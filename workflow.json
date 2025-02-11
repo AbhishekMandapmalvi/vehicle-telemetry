@@ -1,0 +1,51 @@
+{
+  "name": "ELT_pipeline",
+  "email_notifications": {
+    "no_alert_for_skipped_runs": false
+  },
+  "webhook_notifications": {},
+  "timeout_seconds": 0,
+  "max_concurrent_runs": 1,
+  "tasks": [
+    {
+      "task_key": "data_ingestion",
+      "run_if": "ALL_SUCCESS",
+      "spark_python_task": {
+        "python_file": "/Workspace/Users/username/vehicle-telemetry/data_loader/main.py"
+      },
+      "timeout_seconds": 0,
+      "email_notifications": {},
+      "webhook_notifications": {},
+      "environment_key": "Default"
+    },
+    {
+      "task_key": "data_cleaning",
+      "depends_on": [
+        {
+          "task_key": "data_ingestion"
+        }
+      ],
+      "run_if": "ALL_SUCCESS",
+      "notebook_task": {
+        "notebook_path": "/Workspace/Users/username/vehicle-telemetry/data_cleaning/data_cleaning",
+        "source": "WORKSPACE"
+      },
+      "timeout_seconds": 0,
+      "email_notifications": {}
+    }
+  ],
+  "queue": {
+    "enabled": true
+  },
+  "environments": [
+    {
+      "environment_key": "Default",
+      "spec": {
+        "client": "2"
+      }
+    }
+  ],
+  "run_as": {
+    "user_name": "username"
+  }
+}
