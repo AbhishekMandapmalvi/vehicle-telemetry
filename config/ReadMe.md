@@ -25,9 +25,9 @@ The config folder contains essential configuration files for the vehicle telemet
 | `longitude`          | double  | No       | No            | Min: -180, Max: 180  | GPS longitude coordinate             |
 
 ### 2. vehicle_hash_table.yml:
-   This file contains metadata about the vehicles in the fleet. It maps each vehicle_id to detailed information about the vehicle's battery configuration, type, capacity etc.
+   This file contains metadata about the vehicles in the fleet. It maps each vehicle_id to detailed information about the vehicle's battery configuration, type, capacity etc. To onboard a new vehicle to fleet add details to this file.
 ### Key Features:
-  a. Vehicle Metadata: Includes details such as commercial name, battery chemistry, pack configuration, nominal voltage, and number of cells.
+  a. Vehicle Metadata: Includes details such as commercial name, battery chemistry, pack configuration, nominal voltage, and number of cells.\
   b. Fleet Management: Helps enrich telemetry data with vehicle-specific attributes during processing.
 
 ### Vehicle Fields:
