@@ -80,10 +80,6 @@ def generate_fleet_data(num_vehicles, null_probability=0.1):
     return fleet_data
 
 # %%
-# New configuration
-MAX_FILE_SIZE = 1 * 1024 * 1024  # 10MB in bytes
-BASE_DIR = "vehicle_data"
-
 def save_vehicle_data(vehicle_id, data, file_index, start_time):
     """Save data to a properly structured file"""
     # Create vehicle directory if needed
@@ -99,6 +95,10 @@ def save_vehicle_data(vehicle_id, data, file_index, start_time):
         json.dump(data, f, indent=4)
     
     return filepath
+
+# New configuration
+MAX_FILE_SIZE = 1 * 1024 * 1024  # 10MB in bytes
+BASE_DIR = "vehicle_data"
 
 # Modified main loop
 vehicle_data = {}  # {vehicle_id: {'data': [], 'file_index': 0}}
