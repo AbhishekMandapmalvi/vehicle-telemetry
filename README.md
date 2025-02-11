@@ -29,9 +29,9 @@ This project processes raw telemetry data from electric vehicle fleets to produc
          Data Generator (Local PC/Vehicle) -> Data Integration (Blob/S3 via Kafka) -> Data Loader (data_loader/main.py) -> Data Cleaning (data_cleaning.ipynb)
 
 ## Key Features
-1. Scalable Cloud Integration: Supports both Azure Blob Storage and AWS S3 for reliable and scalable cloud-based storage.\
-2. Automated Data Ingestion: Leverages Databricks' Autoloader for real-time detection and ingestion of new telemetry data.\
-3. Configurable Simulation: Allows users to customize fleet size, simulation duration, and file size limits during data generation.\
+1. Scalable Cloud Integration: Supports both Azure Blob Storage and AWS S3 for reliable and scalable cloud-based storage.
+2. Automated Data Ingestion: Leverages Databricks' Autoloader for real-time detection and ingestion of new telemetry data.
+3. Configurable Simulation: Allows users to customize fleet size, simulation duration, and file size limits during data generation.
 4. Cleaned Data for Modeling: Produces structured, high-quality telemetry data ready for use in predictive battery health models.
 
 ## How to Use
