@@ -53,3 +53,6 @@ This project processes raw telemetry data from electric vehicle fleets to produc
 
 5. Schedule Workflow to Automate Loading and Transformation:
   a. Utilize databricks' workflow/job scheduler function to automate this pipeline. 
+
+## Results:
+![image](https://github.com/user-attachments/assets/c6e515de-cf3a-4e25-b849-50facdac9597)
