@@ -37,6 +37,6 @@ This folder contains Python scripts designed to clean raw telemetry data from el
    b. Apply constraints using apply_constraints.py.\
    c. Enrich data with vehicle metadata using data_mapping.py.\
    d. Process timestamps into standard formats.\
-   e. Interpolate missing values using interpolation.py.
-   f. Determine vehicle status using vehicle_status.py.
+   e. Interpolate missing values using interpolation.py.\
+   f. Determine vehicle status using vehicle_status.py.\
    g. Write cleaned data to the Delta Lake table workspace.default.cleaned_telemetry.
