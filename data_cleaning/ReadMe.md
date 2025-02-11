@@ -9,26 +9,26 @@ This folder contains Python scripts designed to clean raw telemetry data from el
 #### Key Features:
    a. Loads schema constraints from a YAML file.\
    b. Filters out invalid rows based on field-specific constraints (e.g., speed, battery voltage).\
-   c. Ensures data quality before further processing.\
+   c. Ensures data quality before further processing.
 
 ### 2. data_mapping.py:
    This script enriches the telemetry data by mapping vehicle metadata (e.g., battery configuration, type, capacity) from the vehicle_hash_table.yml file to the raw telemetry data.
 #### Key Features:
    a. Joins raw telemetry data with vehicle metadata using vehicle_id.\
-   b. Adds fields such as commercial_name, battery_type, and battery_capacity to the dataset.\
+   b. Adds fields such as commercial_name, battery_type, and battery_capacity to the dataset.
 
 ### 3. interpolation.py:
    This script interpolates missing or null values in the telemetry dataset based on rules defined in the YAML schema file (schema.yml). It supports both linear interpolation and zero-order hold (ZOH).
 #### Key Features:
    a. Handles missing values for numerical fields like speed, battery voltage, and state of charge.\
    b. Linear interpolation: Calculates intermediate values based on neighboring records.\
-   c. ZOH: Fills missing values using the last known value.\
+   c. ZOH: Fills missing values using the last known value.
 
 ### 4. vehicle_status.py:
    This script determines the operational status of each vehicle (e.g., driving, charging, parking) based on speed and battery current.
 #### Key Features:
    a. Adds a new column vehicle_status to classify vehicle activity.\
-   b. Status categories include: "driving", "charging", "parking", "recuperation", "fault", and "unknown".\
+   b. Status categories include: "driving", "charging", "parking", "recuperation", "fault", and "unknown".
 
 ### 5. data_cleaning.py:
    This Databricks notebook orchestrates the entire data cleaning pipeline. It integrates all other scripts to process raw telemetry data into a cleaned and enriched format.
