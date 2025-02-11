@@ -97,7 +97,8 @@ def save_vehicle_data(vehicle_id, data, file_index, start_time):
     return filepath
 
 # New configuration
-MAX_FILE_SIZE = 1 * 1024 * 1024  # 10MB in bytes
+ALLOWED_FILE_SIZE = 1 #MB
+MAX_FILE_SIZE = ALLOWED_FILE_SIZE * 1024 * 1024  # 1MB in bytes
 BASE_DIR = "vehicle_data"
 
 # Modified main loop
