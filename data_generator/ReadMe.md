@@ -42,13 +42,13 @@ This script simulates telemetry data for a fleet of vehicles, generating realist
 }
 
 ## Directory Structure Example:
-vehicle_data/
-├── V-001/
-│   ├── V-001_20231010_120000_0.json
-│   ├── V-001_20231010_120500_1.json
-├── V-002/
-│   ├── V-002_20231010_120000_0.json
-│   ├── V-002_20231010_121000_1.json
+vehicle_data/\
+├── V-001/\
+│   ├── V-001_20231010_120000_0.json\
+│   ├── V-001_20231010_120500_1.json\
+├── V-002/\
+│   ├── V-002_20231010_120000_0.json\
+│   ├── V-002_20231010_121000_1.json\
 ...
 
 ## Notes
