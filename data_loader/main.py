@@ -32,7 +32,7 @@ def main():
     
     pipeline = Telematics_ingestion(
         spark=SparkSession.builder.appName('TelemetryApp').getOrCreate(),
-        config_path="/Workspace/Users/abhishekrmandapmalvi@gmail.com/vehicle-telemetry/config/schema.yml",
+        config_path="/Workspace/Users/email/vehicle-telemetry/config/schema.yml",
         source_path="s3://vehicletelemetry/",
         target_path="workspace.default.raw_telemetry",
         checkpoint_path="s3://vehiclepipelinecache/",
